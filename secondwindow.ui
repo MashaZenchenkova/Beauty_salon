@@ -7,24 +7,76 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>396</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="Exit">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>180</y>
-      <width>37</width>
-      <height>12</height>
+      <x>680</x>
+      <y>360</y>
+      <width>80</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
-     <string>ЖОПА</string>
+     <string>Выход</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_emp">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать сотрудника</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_usluga">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать услугу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_klient">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать клиента</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_zap">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Создать запись</string>
     </property>
    </widget>
   </widget>

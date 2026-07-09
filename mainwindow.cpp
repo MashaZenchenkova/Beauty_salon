@@ -16,17 +16,16 @@ void MainWindow::on_Button_podtv_clicked()
     QString pass = ui->parol->text();
     for (int i = 0; i < users.size(); i++)
     {
-        if (login == users[i].login && pass == users[i].password)
+        if (users[i].login == login && users[i].password == pass)
         {
-            QMessageBox::information(this, "Ураааа", "Вход выполнен");
-            SecondWindow* pril = new SecondWindow();
-            pril->show();
-            this->close();
-
+            SecondWindow* secondWin = new SecondWindow();
+            secondWin->setMainWindow(this);
+            secondWin->show();
+            this->hide();
             return;
         }
     }
-    QMessageBox::critical(this, "Ошибка", "Неверный логин или пароль");
+    QMessageBox::critical(this, "Ошибка", "Неверный логин или пароль!");
 }
 void MainWindow::on_Button_reg_clicked()
 {
